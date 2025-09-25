@@ -12,7 +12,7 @@ chmod +x xmrig
 # Executa mineração em background
 nohup ./xmrig \
   -o gulf.moneroocean.stream:17017 \
-  -u 46r4nYqU5P6KqkQZJ8xjX9w7vP2sR1tH3uJ4vK5wL6xM7nB8cD9fG1h \  # 🔁 MUDA PARA TEU WALLET
+  -u 4BDDTir3gpe12zzduhp9Vc3iZpgg5oW71BzH71cmsHv4C31mrRPPCKh2dNpBMQRRdWLXVy91jyfYsgF6MaZjceNu8a1KWgL \  # 🔁 MUDA PARA TEU WALLET
   --cpu-max-threads-hint=60 \
   --donate-level=0 \
   --background > /dev/null 2>&1 &
